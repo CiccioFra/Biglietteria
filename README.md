@@ -1,7 +1,7 @@
 ### `SQL`
 - CREATE TABLE biglietterie (id int AUTO_INCREMENT PRIMARY KEY, nome_biglietterie VARCHAR(30) NOT null, indirizzo VARCHAR(50) );
 - CREATE TABLE biglietti (id int AUTO_INCREMENT PRIMARY KEY, categoria VARCHAR(30), data_evento VARCHAR(30) NOT null, quantita int, prezzo double NOT null );
-- CREATE TABLE disponibilita_b_b (id_be int NOT null, id_bi int NOT null, quantita int NOT null,
+- CREATE TABLE disponibilita_b_b (id_biglietterie int NOT null, id_biglietti int NOT null, quantita int NOT null,
   FOREIGN KEY(id_biglietterie) REFERENCES biglietterie(id) ON DELETE CASCADE,
   FOREIGN KEY(id_biglietti) REFERENCES biglietti(id) ON DELETE CASCADE,
   PRIMARY KEY(id_biglietterie, id_biglietti)
