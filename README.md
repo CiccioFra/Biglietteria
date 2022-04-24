@@ -1,10 +1,10 @@
 ### `SQL`
-- CREATE TABLE biglietterie (id int AUTO_INCREMENT PRIMARY KEY, nome_be VARCHAR(30) NOT null, indirizzo VARCHAR(50) );
+- CREATE TABLE biglietterie (id int AUTO_INCREMENT PRIMARY KEY, nome_biglietterie VARCHAR(30) NOT null, indirizzo VARCHAR(50) );
 - CREATE TABLE biglietti (id int AUTO_INCREMENT PRIMARY KEY, categoria VARCHAR(30), data_evento VARCHAR(30) NOT null, quantita int, prezzo double NOT null );
 - CREATE TABLE disponibilita_b_b (id_be int NOT null, id_bi int NOT null, quantita int NOT null,
-  FOREIGN KEY(id_be) REFERENCES biglietterie(id) ON DELETE CASCADE,
-  FOREIGN KEY(id_bi) REFERENCES biglietti(id) ON DELETE CASCADE,
-  PRIMARY KEY(id_be, id_bi)
+  FOREIGN KEY(id_biglietterie) REFERENCES biglietterie(id) ON DELETE CASCADE,
+  FOREIGN KEY(id_biglietti) REFERENCES biglietti(id) ON DELETE CASCADE,
+  PRIMARY KEY(id_biglietterie, id_biglietti)
   );
 - CREATE TABLE utenti (id int AUTO_INCREMENT PRIMARY KEY, nome_utente VARCHAR(30), indirizzo VARCHAR(50) );
 - CREATE TABLE utente_compra_biglietti (id_utente int NOT null, id_biglietto int NOT null, quantita_biglietti_acquistati int NOT null, data_acquisto VARCHAR(20) NOT null,
