@@ -7,11 +7,13 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import static engim.biglietteria.constants.DBConfig.URL;
+
 public class BiglietteriaRepository {
     public static List<Biglietteria> selezionaBiblietteria(){
         List<Biglietteria> biglietteriaList = new ArrayList<>();
         try {
-            Connection connection = DriverManager.getConnection(DBConfig.URL, DBConfig.USER, DBConfig.PW);
+            Connection connection = DriverManager.getConnection(URL, DBConfig.USER, DBConfig.PW);
             String query = "SELECT * FROM biglietteria";
             PreparedStatement statement = connection.prepareStatement(query);
             ResultSet rs = statement.executeQuery();
