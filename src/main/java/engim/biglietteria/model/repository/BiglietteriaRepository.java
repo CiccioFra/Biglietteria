@@ -7,7 +7,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static engim.biglietteria.constants.DBConfig.URL;
+import static engim.biglietteria.constants.DBConfig.*;
 
 public class BiglietteriaRepository {
     public static List<Biglietteria> selezionaBiblietteria(){
