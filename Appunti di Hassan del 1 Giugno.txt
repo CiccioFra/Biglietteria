@@ -1,0 +1,39 @@
+realizzare in servlet jsp spring(alla fine genera una servlet, anche se non proprio, in senso esteso)
+
+spring restitusce json e api velocemente
+
+in js -> fetch e for per visualizzare tabella
+-oppure alla php nella servlet creo html (con for java + append)
+oggi api rest
+senno, modo vecchio, far restiture a java una stringa con tag html
+con servlet non si fanno le fetch
+
+
+heshMap con sessione
+per ogni JPA
+
+
+
+Spring Inizializr
+- Project Maven
+- Dipendenza Java
+Spring Boot DevTools
+Lombok
+SpringWeb
+ < non scaricare JPA perchè deve eserci anche la dipendenza al DB >
+--
+apro con intelliJ
+--
+> scaricare altra dipendenza (per pignoleria) SLF4J (cerco con google) - aiuta a tenere traccai dei rog -> selezioni API Modul (prima in elenco..) -> un altro.. -> poi codice da copiare
+	>  incollo codice in pom.xml come dipendenza
+
+poi fare disegno del DB
+
+suddividere secondo quelle che sono le nostre classi
+- model opp entity
+- controller
+- payloads
+
+"concetti":
+le dipendenze (è codice xml) le mette nel pom (ad es. come JPA (che vuole mySql o simile; mySql è libreria)) 
+le librerie le cerco in project structure, scarica e mette in cartella propria, ma non le mette nel pom (ad es. JDBS)
