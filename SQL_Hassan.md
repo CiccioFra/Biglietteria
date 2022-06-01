@@ -40,5 +40,5 @@ connesione Angular
 17. il service comunica con spring: con il controller di Spring -> cosa farci:
 
 
-1. dichairo il model
+1. dichiaro il model
 2. il server a cui dico di andare a prendere i dati dall'host
